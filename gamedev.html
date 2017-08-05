@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="menu.js"></script>
+<title>The Art of Yaron Granot</title>
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#hexoultab').click(function() {
+        if ($('#hexoultab').hasClass('chosen')) {
+            $('.indie').fadeOut();
+            $('.tablink').removeClass('chosen');
+            return;
+        }
+    
+        $('#indievolcano').fadeOut(function() {
+        $('#indieneonball').fadeOut(function() {
+        $('#indiehexoul').fadeIn();});});
+        
+        $('.tablink').removeClass('chosen');
+        $('#hexoultab').addClass('chosen');
+        
+    });
+    $('#volcanotab').click(function() {
+        if ($('#volcanotab').hasClass('chosen')) {
+            $('.indie').fadeOut();
+            $('.tablink').removeClass('chosen');
+            return;
+        }
+        
+        $('#indiehexoul').fadeOut(function() {
+        $('#indieneonball').fadeOut(function() {
+        $('#indievolcano').fadeIn();});});
+        
+        $('.tablink').removeClass('chosen');
+        $('#volcanotab').addClass('chosen');
+    });
+    $('#neonballtab').click(function() {
+        if ($('#neonballtab').hasClass('chosen')) {
+            $('.indie').fadeOut();
+            $('.tablink').removeClass('chosen');
+            return;
+        }
+        
+        $('#indievolcano').fadeOut(function() {
+        $('#indiehexoul').fadeOut(function() {
+        $('#indieneonball').fadeIn();});});
+        
+        $('.tablink').removeClass('chosen');
+        $('#neonballtab').addClass('chosen');
+    
+        //$('.indietaboverlay').css('opacity','');
+        //$('#neonballtab').find('.indietaboverlay').css({opacity: 1.0});
+    });
+    
+    $('.indie').hide();
+});
+</script>
+</head>
+<body>
+<div align="center">
+<a href="index.html"><img src="img/header.png" id="header"/></a>
+<div class="menu">
+    <div class="tab"><a href="illustration.html">
+        <img class="tab" src="img/tab_illustrations.png"/>
+    </a></div>
+
+    <div class="tab"><a href="concept_art.html">
+        <img class="tab" src="img/tab_conceptart.png" />
+    </a></div>
+
+    <div class="tab"><a href="gamedev.html">
+        <img class="chosentab" src="img/tab_gamedev_over.png" />
+    </a></div>
+
+    <div class="tab"><a href="contact.html">
+        <img class="tab" src="img/tab_contact.png" data-alt-src="img/tab_contact_over.png"/>
+    </a></div>
+</div>
+
+<div class="bgcontent">
+    <div class="tiles">
+        <a class="fancybox" rel="group" href="img/gamedev/gamedev_drednoughtui.jpg" title='Kazooloo GUI' year="2016" caption='UI design take on Dreadnought.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_drednoughtui_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_kazooloogui.jpg" title='Kazooloo GUI' year="2015" caption='GUI design of the augmented-reality mobile game - Kazooloo.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_kazooloogui_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_kazoolooassets.jpg" title='Kazooloo Assets' year="2015" caption='Various assets from the augmented-reality mobile game - Kazooloo.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_kazoolooassets_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_slotomaniaadv.jpg" title='Slotomania UI elements & assets' year="2016" caption='UI assets for Slotomania.'> 
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_slotomaniaadv_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_volcanodrop.jpg" title='Volcano Tower sprites' year="2015" caption='Assets and screenshots from my indie project - Volcano Tower.'> 
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_volcanodrop_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_volcanodropmenus.jpg" title='Volcano Tower UI' year="2016" caption='Menu screens and UI from my indie project - Volcano Tower.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_volcanodropmenus_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_owskins.jpg" title='Overwolf gamification' year="2015" caption="Not &quot;game-design&quot; per say, but various assets and gui done for overwolf's gamification proccess. <div class='captionlink'><a href='https://www.youtube.com/watch?v=MqGWHzTAOGA' target='_blank'>OW official intro 2014 clip</a></div><div class='captionlink'><a href='https://youtu.be/zmdMGT_OJB4?t=23s' target='_blank'>OW's skin development clip</a></div>" >
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_owskins_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_selfcrifice.jpg" title='Selfcrifice Sprites' year="2016" caption='Sprites and GUI from my 2016 GGJ enrty.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_selfcrifice_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_logos1.jpg" title='Various Logos' sprites' year="2013-2016" caption='Various logo designs i made along the years.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_logos1_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_asphalt8mockup.jpg" title='Asphalt8 Main Menu mockup' year="2016" caption='A main menu mockup i did as part of a design test for Gameloft.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_asphalt8mockup_thumb.jpg" />
+        </a>
+       <a class="fancybox" rel="group" href="img/gamedev/gamedev_liveroundsgui.jpg" title='Live Rounds interface' year="2015" caption='GUI sheet from Live Rounds.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_liveroundsgui_thumb.jpg" />
+        </a>
+	   <a class="fancybox" rel="group" href="img/gamedev/gamedev_neonball.jpg" title='Neonball graphics' year="2013" caption='Assets and screenshots from my indie project - Neonball.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_neonball_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_sidescroller.jpg" title='Sci-fi side scroller sprites' year="2014" caption='sprites i made during GGJ 2014.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_sidescroller_thumb.jpg" />
+        </a>
+        <a class="fancybox" rel="group" href="img/gamedev/gamedev_topdowngore.jpg" title='Top-Down assets' year="2013" caption='Assets and a screenshot  from a game developed at GGJ 2013 (Global Game Jam).'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_topdowngore_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_eltiumassets.jpg" title='Eltium GUI' year="2013" caption='GUI assets for a sci-fi stradegy game.'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_eltiumassets_thumb.jpg" />
+        </a>
+		<a class="fancybox" rel="group" href="img/gamedev/gamedev_pixelart.jpg" title='Various Pixel-Art' year="2008-2011" caption='some old pixel-art from back in the day....'>
+            <img class="tileoverlay" src="img/thumnail_over.png" />
+            <img src="img/gamedev/gamedev_pixelart_thumb.jpg" />
+        </a>
+    </div>
+    
+    <div class="indietabs">
+        <br/><img src="img/gamedev/indie_title.png" /><br/>
+        <a class='tablink' id="hexoultab">
+            <img class="indietaboverlay" src="img/gamedev/indie_tabs_over.png" />
+            <img src="img/gamedev/indie_tabs_hexoul.jpg" /><a>
+        <a class='tablink' id="volcanotab">
+            <img class="indietaboverlay" src="img/gamedev/indie_tabs_over.png" />
+            <img src="img/gamedev/indie_tabs_volcanodrop.jpg" /></a>
+        <a class='tablink' id="neonballtab">
+            <img class="indietaboverlay" src="img/gamedev/indie_tabs_over.png" />
+            <img src="img/gamedev/indie_tabs_neonball.jpg" /></a>
+    </div>
+
+    <div class="indie" id="indiehexoul">
+        <img src="img/gamedev/hexoul/hexoul_title.png" style="position:absolute; margin-top: -25px; margin-left: -217px;"/>
+        <div style="height: 120px;"></div>
+    </div>
+    
+    <div class="indie" id="indievolcano">
+        <img src="img/gamedev/volcanodrop/volcanodrop_title.png" style="position:absolute; margin-top: -70px; margin-left: -143px;"/>
+        <div style="height: 350px;"></div>
+        <p>Volcano Tower is an endless platformer for mobile touch screen devices, <b>currently under development</b>, that tells the story of a remote peacful tribe, living under the constant threat of a volcano god who steals their goods and raids their village.</p>
+        <p>The hero role is played by a masked tribesmen who stands against the evil volcano god, and enters his cursed tower.</p>
+        
+        <a class="fancybox fancybox.iframe" align="left" href="https://youtu.be/Ml8vHr5SHe0">
+            <img style="position: absolute;" src="img/gamedev/volcanodrop_videolink_play.png">
+            <img class="youtubeoverlay" src="img/gamedev/volcanodrop_videolink_play_over.png">
+            <img src="img/gamedev/volcanodrop/volcanodrop_videolink.jpg">
+        </a>
+       
+        <p>In the tower, the player attempts to avoid being smashed, burned or otherwise eliminated by obstacles falling (mostly) from above.</p>
+        <p>It is a nerve tensing and fast experience filled with clutch moments and hard difficulty.</p>
+        <p>The hero must use skill, special power-ups and some heavy deal of luck to get the most gold as he climbs the furthest he can get.</p>
+        <p>You are guided by the tribe's shaman who offers you access to a store, in which you can purchase all kind of abilities and power-ups to help you climb the doomed tower.</p>
+        <a class="fancybox" rel="volcanodrop" href="img/gamedev/volcanodrop/volcanodrop_screenshots_1.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/volcanodrop/volcanodrop_screenshots_1_thumb.jpg" /></a>
+        <a class="fancybox" rel="volcanodrop" href="img/gamedev/volcanodrop/volcanodrop_screenshots_2.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/volcanodrop/volcanodrop_screenshots_2_thumb.jpg" /></a><br />
+        <a class="fancybox" rel="volcanodrop" href="img/gamedev/volcanodrop/volcanodrop_screenshots_3.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/volcanodrop/volcanodrop_screenshots_3_thumb.jpg" /></a>
+        <a class="fancybox" rel="volcanodrop" href="img/gamedev/volcanodrop/volcanodrop_screenshots_4.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/volcanodrop/volcanodrop_screenshots_4_thumb.jpg" /></a>
+        <p>Must of the work is still conceptioal, but for now i have managed to get an early version with the basic gameplay in, with the help of a developer friend.</p>
+        
+        <a class="fancybox fancybox.iframe" align="left" href="https://www.youtube.com/embed/PD7MhQh6HTc?showinfo=0&autoplay=1">
+            <img style="position: absolute;" src="img/gamedev/volcanodrop_videolink_play.png">
+            <img class="youtubeoverlay" src="img/gamedev/volcanodrop_videolink_play_over.png">
+            <img src="img/gamedev/volcanodrop/volcanodrop_videolink2.jpg">
+        </a>
+		
+        <p>I'm looking for a talented <b>Unity developer</b> who likes what he sees and want to give Volcano Drop the push it needs for release.</p>
+        <p>If you know your way around <b>Unity</b>, like the style and the theme, love doing 2D particles & vfx and have a serious attitude to get things done - plz, leave me a message and lets rock this!</p>
+        <p><a href="mailto:YaronGranotArt@gmail.com" target="_blank">YaronGranotArt@gmail.com</a></p>
+    </div>
+    <div class="indie" id="indieneonball">
+        <img src="img/gamedev/neonball/neonball_title.png" style="position:absolute; margin-top: -65px; margin-left: -213px;"/>
+        <div style="height: 350px;"></div>
+        <p>Neonball will forever be the first real game project i ever finished. It's a skill-based arcade-puzzler developed for Newgrounds, that got a lot of attention, great reviews, won 1st place at 2013 GameIS awards and featured front-page on NG.</p>
+        <a class="fancybox fancybox.iframe" align="left" href="https://www.youtube.com/embed/6yWFqVHhaew?showinfo=0&autoplay=1">
+            <img style="position: absolute;" src="img/gamedev/volcanodrop_videolink_play.png">
+            <img class="youtubeoverlay" src="img/gamedev/volcanodrop_videolink_play_over.png">
+            <img src="img/gamedev/neonball/neonball_videolink.jpg">
+        </a>
+        <p>Neonball follows the story of a grim future where mankind has deplited most of its' natural resources and now must survive on the left-overs of any energy resource remaining of the planet. The world is dark, covered with over-grown vegetation and mustly free from the grip of men, except the one last city remaining - the NeonCity.</p>
+        <p>The game is actually a test, made by the E.N.R (Energy National Resources) that all men must pass to prove worthy of having their share in humanity's remaining energy and granting accsses to the NeonCity.</p>
+        <a class="fancybox" rel="neonball" href="img/gamedev/neonball/neonball_screenshots_1.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/neonball/neonball_screenshots_1_thumb.jpg" /></a>
+        <a class="fancybox" rel="neonball" href="img/gamedev/neonball/neonball_screenshots_2.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/neonball/neonball_screenshots_2_thumb.jpg" /></a>
+        <p>Along the various levels, the player will have to collect stars (3 in each level and are found at hard places to reach) and achieving time-trials (ending the level in less than a pre-determand amount of time) to be a citizen of the NeonCity.</p>
+        <p>The concept of an energy preservation test, build around manipulating space (when collecting the starts) and time (when pursuing the time-trials) was an idea i had in my mind for some time before i even started to think about Neonball.</p>
+        <p>We live at times that the survival of our species (and many other species) hangs on the balance, when we have exploited and abused the little we have left, and are keeping to do so in a blind eye.</p>
+        <p>I truly believe that there will come a day when we will have to restrain our consumption and uncompromised pleasures on the expanse of our world, for there will be none left to provide them.</p>
+        <a class="fancybox" rel="neonball" href="img/gamedev/neonball/neonball_screenshots_3.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/neonball/neonball_screenshots_3_thumb.jpg" /></a>
+        <a class="fancybox" rel="neonball" href="img/gamedev/neonball/neonball_screenshots_4.jpg">
+            <img class="screenshotoverlay" src="img/gamedev/screenshots_thumnail_over.png" />
+            <img src="img/gamedev/neonball/neonball_screenshots_4_thumb.jpg" /></a>
+        <p>Neonball for me was a fun way to play with the theory of how the world will manage to control the "right for energy" (for there will be little to go around) and how being a true economical demends acknowledging the difficulties in manipuating time and space.</p>
+
+        <p>But you know, i could just say it's a lots-of-fun browser game that you should give a try! :D</p>
+        <p><a href="http://www.newgrounds.com/portal/view/624404" target="_blank">Play Neonball on Newgrounds</a></p>
+
+    </div>
+</div>
+
+
+
+</div>
+</body>
+</html>

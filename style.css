@@ -1,0 +1,268 @@
+body {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0px;
+    font-family: Arial,sans-serif;
+    color: #50403a;
+    font-size: 94%;
+    line-height: 160%;
+}
+
+a {
+    text-decoration: none;
+    color: #7f3f35;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div.menu {
+    display:table;
+    width: 1096px;
+    left: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+div.tab {
+    display:table-cell;
+    width: 25%;
+}
+
+img.tab {
+    vertical-align: middle;
+}
+img.chosentab {
+    vertical-align: middle;
+}
+
+div.bgcontent {
+    background-color: #e0e0e0;
+    width: 1096px;
+    margin-top: 15px;
+    padding-bottom: 50px;
+}
+
+div.content {
+    padding-top: 26px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+}
+
+div.linkedin {
+    text-align: right;
+}
+
+div.linkedin a {
+    width: 40px;
+    height: 32px;
+    margin-right: -9px;
+    margin-left: 4px;
+    display:inline-block;
+}
+
+#linkedin1 {
+    background:transparent url("img/home/home_links_linkedin.png") center top no-repeat;
+}
+
+#linkedin1:hover {
+    background-image: url("img/home/home_links_linkedin_over.png");
+}
+
+#linkedin2 {
+    background:transparent url("img/home/home_links_behance.png") center top no-repeat;
+}
+
+#linkedin2:hover {
+    background-image: url("img/home/home_links_behance_over.png");
+}
+
+#linkedin3 {
+    background:transparent url("img/home/home_links_fb.png") center top no-repeat;
+}
+
+#linkedin3:hover {
+    background-image: url("img/home/home_links_fb_over.png");
+}
+
+
+
+/*data-alt-src="img\home\home_links_behance_over.png"*/
+
+div.homeparagraph{
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: table;
+    text-align: left;
+}
+div.cvbox {
+    width: 152px;
+    background-color: #c9c9c9;
+    margin-top: 8px;
+    padding: 5px;
+    font-style: italic;
+}
+
+div.cvbox img{
+    padding: 3px;
+    vertical-align: top;
+}
+
+div.clients img {
+    padding: 10px;
+}
+
+/* Tiles: */
+
+div.tiles {
+    padding-top: 21px;
+    text-align: left;
+}
+
+div.tiles img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 48px;
+    margin-right: 47px;
+}
+
+div.tiles a {
+    text-decoration: none;
+}
+
+img.tileoverlay {
+    position: absolute;
+    opacity: 0.0;
+    transition:.4s;
+}
+
+img.tileoverlay:hover {
+    position: absolute;
+    opacity: 1.0;
+    transition: none;
+}
+
+/* captions: */
+
+@font-face {
+    font-family: Penumbra;
+    src: url(font/Penumbra-HalfSerif-Std_0.ttf);
+}
+
+@font-face {
+    font-family: PenumbraLight;
+    src: url(font/Penumbra-HalfSerif-Std-Light_0.ttf);
+}
+
+div.captiontitle {
+    font-family: PenumbraLight;
+    text-decoration: underline;
+    color: #949494;
+    font-size: 94%;
+    line-height: 200%;
+}
+
+div.captionyear {
+    font-family: PenumbraLight;
+    color: #7f3f35;
+    font-size: 90%;
+    line-height: 160%;
+}
+
+div.captiontext {
+    font-family: PenumbraLight;
+    color: #7f3f35;
+    font-size: 94%;
+    line-height: 160%;
+}
+
+div.captionlink {
+    font-family: Penumbra;
+    font-size: 75%;
+    line-height: 160%;
+    text-decoration: underline;
+}
+
+/* Indie: */
+
+div.indietabs img {
+    margin-bottom: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.indie {
+    background-color: #b8b8b8;
+    width: 590px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #584944;
+    background-repeat: no-repeat;
+    margin-top: 38px;
+    background-position: bottom; 
+    padding-bottom: 130px;
+}
+
+div.indie p {
+    width: 300px;
+    text-align: left;
+}
+
+div.indie img {
+    margin: 5px;
+}
+
+img.indietaboverlay {
+    opacity: 0.0;
+    position: absolute;
+    transition:.4s;
+}
+
+.chosen img.indietaboverlay {
+    opacity: 1.0;
+    position: absolute;
+}
+
+img.indietaboverlay:hover {
+    opacity: 1.0;
+    cursor: pointer;
+    transition:none;
+}
+
+div#indieneonball {
+    background-image: url('img/gamedev/neonball/neonball_innerframe_footer.jpg');
+}
+
+div#indievolcano {
+    background-image: url('img/gamedev/volcanodrop/volcanodrop_innerframe_footer.jpg');
+}
+
+.screenshotoverlay {
+    position: absolute;
+    opacity: 0.0;
+    transition:.4s;
+}
+
+img.screenshotoverlay:hover {
+    opacity: 1.0;
+    transition: none;
+}
+
+.youtubeoverlay {
+    position: absolute;
+    opacity: 0.0;
+}
+
+img.youtubeoverlay:hover {
+    opacity: 1.0;
+    
+}
+
+#volcanovideo {
+    display: none;
+}
